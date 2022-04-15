@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>TestNG:  Earn Points 2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Earn Points 2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 09 23:02:49 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48083 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the know more button in website information page of online partners", "Optional[In Store and Online Partners]"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.mobikwik.com/] but found [https://www.payback.in/partner-brands/mobikwik]
+	at stepDefinitions.StepDefinitions.user_should_be_redirected_to_the_online_partners_website(StepDefinitions.java:223)
+	at ?.user should be redirected to the online partners website(file:///C:/Users/VASUDM/eclipse-workspace/Payback/src/test/java/features/isoPartners.feature:9)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659477001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659477001'><pre>java.lang.AssertionError: expected [https://www.mobikwik.com/] but found [https://www.payback.in/partner-brands/mobikwik]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.StepDefinitions.user_should_be_redirected_to_the_online_partners_website(StepDefinitions.java:223)
+	at ?.user should be redirected to the online partners website(file:///C:/Users/VASUDM/eclipse-workspace/Payback/src/test/java/features/isoPartners.feature:9)
+</pre></div></td>
+<td>6</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the tabs under Voucher information page", "Optional[Instant Vouchers page]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-lg-3 p-2 col-md-4 col-sm-6 col-6&apos;]//div[@class=&apos;listind_inner_dv h-100 text-center bg-white rounded pt-5 position-relative cursor-pointer&apos; and .//div//div//img[@alt=&apos;Cafe Coffee Day Online&apos;]]//div//a&quot;}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;INLEN8520026389&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1956680f4331595ad4ec1213ceb59032, findElement {using=xpath, value=//div[@class=&apos;col-lg-3 p-2 col-md-4 col-sm-6 col-6&apos;]//div[@class=&apos;listind_inner_dv h-100 text-center bg-white rounded pt-5 position-relative cursor-pointer&apos; and .//div//div//img[@alt=&apos;Cafe Coffee Day Online&apos;]]//div//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\VASUDM\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57181/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1956680f4331595ad4ec1213ceb59032
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageFactory.instantVouchersPage.getCcdBuyBtn(instantVouchersPage.java:36)
+	at stepDefinitions.StepDefinitions.clicked_on_buy_now_button(StepDefinitions.java:299)
+	at ?.clicked on buy now button(file:///C:/Users/VASUDM/eclipse-workspace/Payback/src/test/java/features/instantVouchers.feature:21)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1624152218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1624152218'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;col-lg-3 p-2 col-md-4 col-sm-6 col-6&apos;]//div[@class=&apos;listind_inner_dv h-100 text-center bg-white rounded pt-5 position-relative cursor-pointer&apos; and .//div//div//img[@alt=&apos;Cafe Coffee Day Online&apos;]]//div//a&quot;}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;INLEN8520026389&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1956680f4331595ad4ec1213ceb59032, findElement {using=xpath, value=//div[@class=&apos;col-lg-3 p-2 col-md-4 col-sm-6 col-6&apos;]//div[@class=&apos;listind_inner_dv h-100 text-center bg-white rounded pt-5 position-relative cursor-pointer&apos; and .//div//div//img[@alt=&apos;Cafe Coffee Day Online&apos;]]//div//a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\VASUDM\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57181/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1956680f4331595ad4ec1213ceb59032
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pageFactory.instantVouchersPage.getCcdBuyBtn(instantVouchersPage.java:36)
+	at stepDefinitions.StepDefinitions.clicked_on_buy_now_button(StepDefinitions.java:299)
+	at ?.clicked on buy now button(file:///C:/Users/VASUDM/eclipse-workspace/Payback/src/test/java/features/instantVouchers.feature:21)
+</pre></div></td>
+<td>4</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the cards on Instant vouchers page", "Optional[Instant Vouchers page]"</td>
+<td></td>
+<td>8</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the cards under payback partners in banking partners page", "Optional[Banking Partners Page]"</td>
+<td></td>
+<td>6</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the know more button in website information page of in store partners", "Optional[In Store and Online Partners]"</td>
+<td></td>
+<td>7</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the filters", "Optional[Instant Vouchers page]"</td>
+<td></td>
+<td>6</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+<tr>
+<td title='testOptions.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: testOptions.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Faq section", "Optional[Banking Partners Page]"</td>
+<td></td>
+<td>8</td>
+<td>testOptions.TestRunner1@7161d8d1</td></tr>
+</table><p>
+</body>
+</html>

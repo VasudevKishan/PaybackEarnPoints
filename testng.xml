@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Earn Points" parallel="tests" thread-count="4">
+    <listeners>
+        <listener class-name="testOptions.TestngListeners"/>
+    </listeners>
+    <test name="Online Shopping">
+        <classes>
+            <class name="testOptions.TestRunner"/>            
+        </classes>
+    </test>
+	<test name="Iso Partners">
+        <classes>
+            <class name="testOptions.TestRunner1"/>            
+        </classes>
+    </test>
+    <test name="Instant Vouchers">
+        <classes>
+            <class name="testOptions.TestRunner2"/>            
+        </classes>
+    </test>
+    <test name="Banking Partners">
+        <classes>
+            <class name="testOptions.TestRunner3"/>            
+        </classes>
+    </test>
+    
+</suite>

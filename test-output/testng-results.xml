@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-15T12:44:31 IST" name="Earn Points" finished-at="2022-04-15T12:45:17 IST" duration-ms="46020">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner1@5bf0d49]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner2@557caf28]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner3@292b08d6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-04-15T12:44:31 IST" name="Iso Partners" finished-at="2022-04-15T12:44:47 IST" duration-ms="16195">
+      <class name="testOptions.TestRunner1">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testOptions.TestRunner1@5bf0d49]" started-at="2022-04-15T12:44:31 IST" name="setUpClass" finished-at="2022-04-15T12:44:31 IST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45b4c3a9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner1@5bf0d49]" started-at="2022-04-15T12:44:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:39 IST" duration-ms="8024" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the know more button in website information page of online partners"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[In Store and Online Partners]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.mobikwik.com/] but found [https://www.payback.in/partner-brands/mobikwik]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.mobikwik.com/] but found [https://www.payback.in/partner-brands/mobikwik]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at stepDefinitions.StepDefinitions.user_should_be_redirected_to_the_online_partners_website(StepDefinitions.java:231)
+at ✽.user should be redirected to the online partners website(file:///D:/kjava/Payback/src/test/java/features/isoPartners.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner1@5bf0d49]" started-at="2022-04-15T12:44:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:47 IST" duration-ms="7500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the know more button in website information page of in store partners"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[In Store and Online Partners]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testOptions.TestRunner1@5bf0d49]" started-at="2022-04-15T12:44:47 IST" name="tearDownClass" finished-at="2022-04-15T12:44:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testOptions.TestRunner1 -->
+    </test> <!-- Iso Partners -->
+    <test started-at="2022-04-15T12:44:31 IST" name="Banking Partners" finished-at="2022-04-15T12:44:48 IST" duration-ms="16547">
+      <class name="testOptions.TestRunner3">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testOptions.TestRunner3@292b08d6]" started-at="2022-04-15T12:44:31 IST" name="setUpClass" finished-at="2022-04-15T12:44:31 IST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@291caca8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner3@292b08d6]" started-at="2022-04-15T12:44:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:40 IST" duration-ms="9072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Faq section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Banking Partners Page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner3@292b08d6]" started-at="2022-04-15T12:44:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:47 IST" duration-ms="6781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the cards under payback partners in banking partners page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Banking Partners Page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testOptions.TestRunner3@292b08d6]" started-at="2022-04-15T12:44:48 IST" name="tearDownClass" finished-at="2022-04-15T12:44:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testOptions.TestRunner3 -->
+    </test> <!-- Banking Partners -->
+    <test started-at="2022-04-15T12:44:31 IST" name="Instant Vouchers" finished-at="2022-04-15T12:44:55 IST" duration-ms="23897">
+      <class name="testOptions.TestRunner2">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testOptions.TestRunner2@557caf28]" started-at="2022-04-15T12:44:31 IST" name="setUpClass" finished-at="2022-04-15T12:44:31 IST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@399c4be1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner2@557caf28]" started-at="2022-04-15T12:44:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:41 IST" duration-ms="9600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the cards on Instant vouchers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Instant Vouchers page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner2@557caf28]" started-at="2022-04-15T12:44:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:48 IST" duration-ms="6848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the filters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Instant Vouchers page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner2@557caf28]" started-at="2022-04-15T12:44:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:55 IST" duration-ms="7056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the tabs under Voucher information page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Instant Vouchers page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testOptions.TestRunner2@557caf28]" started-at="2022-04-15T12:44:55 IST" name="tearDownClass" finished-at="2022-04-15T12:44:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testOptions.TestRunner2 -->
+    </test> <!-- Instant Vouchers -->
+    <test started-at="2022-04-15T12:44:31 IST" name="Online Shopping" finished-at="2022-04-15T12:45:17 IST" duration-ms="46020">
+      <class name="testOptions.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:44:31 IST" name="setUpClass" finished-at="2022-04-15T12:44:31 IST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6a2f6f80]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:44:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:42 IST" duration-ms="10491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the cards in Products page and refund policy in product page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Products Page]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:44:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:48 IST" duration-ms="5895" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the cards expand in size when hovered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cards under SHOP ONLINE VIA PAYBACK ACROSS LEADING WEBSITES]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:44:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:52 IST" duration-ms="4606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate that the shop button changes color when hovered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cards under SHOP ONLINE VIA PAYBACK ACROSS LEADING WEBSITES]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:44:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:44:57 IST" duration-ms="5020" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the View All button to displays more cards"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cards under SHOP ONLINE VIA PAYBACK ACROSS LEADING WEBSITES]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:44:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:45:08 IST" duration-ms="10599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the view all button under recomended deals"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cards under Recomended Deals]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:45:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:45:13 IST" duration-ms="4791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate cards under shop by category redirects to products page on click"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Cards under SHOP BY CATEGORY]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:45:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-15T12:45:17 IST" duration-ms="4223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Banners are changing when user clicks on the dots at the bottom of the banner"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Scrolling Banner]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testOptions.TestRunner@f6efaab]" started-at="2022-04-15T12:45:17 IST" name="tearDownClass" finished-at="2022-04-15T12:45:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testOptions.TestRunner -->
+    </test> <!-- Online Shopping -->
+  </suite> <!-- Earn Points -->
+</testng-results>

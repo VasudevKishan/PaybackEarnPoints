@@ -1,0 +1,11 @@
+pageFactory\bankingPartnerPage.class
+pageFactory\PartnerInfoPage.class
+pageFactory\instantVouchersPage.class
+pageFactory\productPage.class
+pageFactory\voucherPage.class
+MavenProject\Payback\App.class
+pageFactory\OnlineShoppingPage.class
+pageFactory\productsPage.class
+utils\ScreenshotUtil.class
+pageFactory\IsopPage.class
+utils\BaseWebDriver.class

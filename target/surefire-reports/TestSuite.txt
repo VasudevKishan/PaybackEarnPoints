@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.112 s <<< FAILURE! - in TestSuite
+testOptions.TestRunner1.runScenario["Validate the know more button in website information page of online partners", "Optional[In Store and Online Partners]"](1)  Time elapsed: 0.184 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.mobikwik.com/] but found [https://www.payback.in/partner-brands/mobikwik]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.StepDefinitions.user_should_be_redirected_to_the_online_partners_website(StepDefinitions.java:229)
+	at ✽.user should be redirected to the online partners website(file:///C:/Users/VASUDM/eclipse-workspace/Payback/src/test/java/features/isoPartners.feature:9)
+
