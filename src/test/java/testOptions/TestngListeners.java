@@ -20,7 +20,7 @@ public class TestngListeners implements ITestListener {
 		ExtentTestManager.getTest().log(Status.PASS, "	Scenario Passed");
 		try {
 			String ssPath = ScreenshotUtil.getLastScreenshotFilename();
-			ExtentTestManager.getTest().log(Status.PASS, "Screenshot of the failed scenario",
+			ExtentTestManager.getTest().log(Status.PASS, "Screenshot of the Passed scenario",
 					MediaEntityBuilder.createScreenCaptureFromPath(ssPath).build());
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
